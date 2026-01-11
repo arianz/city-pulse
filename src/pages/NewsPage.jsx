@@ -7,7 +7,7 @@ const NewsPage = () => {
     <div className="py-3">
       <div className="container">
         <h2 className="display-5 text-center mb-5">
-          Berita Terkini di <span className="fw-medium">{city || 'Kota Kamu'}</span>
+          Berita Terkini di <span className="fw-bold">{city || 'Kota Kamu'}</span>
         </h2>
 
         {newsLoading && (

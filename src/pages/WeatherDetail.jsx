@@ -74,7 +74,7 @@ const WeatherDetail = () => {
     <div className="py-3">
       <div className="container">
         <h2 className="display-5 text-center mb-5">
-          Cuaca Terkini di <span className="fw-medium">{city || 'Kota Kamu'}</span>
+          Cuaca Terkini di <span className="fw-bold">{city || 'Kota Kamu'}</span>
         </h2>
 
         {!coordinates && !weatherLoading && !weatherError && (
@@ -87,7 +87,7 @@ const WeatherDetail = () => {
         {coordinates && (
           <div className="row g-5 align-items-start">
             <div className="col-lg-6 col-12 order-lg-1 order-1">
-              <div className="card shadow-sm rounded-4 h-100">
+              <div className="card shadow-sm rounded-4 h-100 border-2 border-dark">
                 {weatherLoading && (
                   <div className="text-center py-5">
                     <div className="spinner-border text-primary" style={{ width: '4rem', height: '4rem' }} role="status">
@@ -172,13 +172,13 @@ const WeatherDetail = () => {
                     forecast.map((day, index) => (
                       <div
                         key={index}
-                        className="card shadow-sm text-center flex-shrink-0 flex-lg-shrink-1 rounded-3"
+                        className="card border-2 border-dark shadow-sm text-center flex-shrink-0 flex-lg-shrink-1 rounded-3"
                         style={{ minWidth: '150px' }}
                       >
                         <div className="card-body py-4">
                           <p className="fw-bold mb-3">{day.date}</p>
                           <img
-                            src={`https://openweathermap.org/img/wn/${day.icon.replace('n', 'd')}@2x.png`}
+                            src={`https://openweathermap.org/img/wn/${day.icon}@2x.png`}
                             alt={day.description}
                             style={{ width: '80px' }}
                             className="mb-3"

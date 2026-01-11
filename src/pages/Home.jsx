@@ -7,7 +7,7 @@ const Home = () => {
     <div className="py-5">
       <div className="text-center mb-5">
         <h2 className="display-5 mb-4">
-          Selamat Datang di <span className="fw-medium">City Pulse</span>!
+          Selamat Datang di <span className="fw-bold">City Pulse</span>!
         </h2>
         <p className="lead text-muted col-md-10 col-lg-8 mx-auto">
           Aplikasi ini otomatis mendeteksi lokasi kamu dan menampilkan informasi terkini.
@@ -41,7 +41,7 @@ const Home = () => {
 
       <div className="row justify-content-center g-4">
         <div className="col-md-4">
-          <div className="card shadow-sm h-100 text-center p-4 border-primary">
+          <div className="card shadow-sm h-100 text-center p-4 border-2 border-primary">
             <i className="bi bi-cloud-sun fs-1 text-primary mb-3"></i>
             <h5 className="card-title text-primary fw-bold">Cuaca Terkini</h5>
             <p className="card-text text-muted">
@@ -51,7 +51,7 @@ const Home = () => {
         </div>
 
         <div className="col-md-4">
-          <div className="card shadow-sm h-100 text-center p-4 border-success">
+          <div className="card shadow-sm h-100 text-center p-4 border-2 border-success">
             <i className="bi bi-newspaper fs-1 text-success mb-3"></i>
             <h5 className="card-title text-success fw-bold">Berita Lokal</h5>
             <p className="card-text text-muted">
@@ -61,7 +61,7 @@ const Home = () => {
         </div>
 
         <div className="col-md-4">
-          <div className="card shadow-sm h-100 text-center p-4 border-warning">
+          <div className="card shadow-sm h-100 text-center p-4 border-2 border-warning">
             <i className="bi bi-geo-alt-fill fs-1 text-warning mb-3"></i>
             <h5 className="card-title text-warning fw-bold">Tempat Ikonik</h5>
             <p className="card-text text-muted">

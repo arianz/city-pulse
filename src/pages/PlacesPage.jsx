@@ -7,7 +7,7 @@ const PlacesPage = () => {
     <div className="py-3">
       <div className="container">
         <h2 className="display-5 text-center mb-5">
-          Daftar Tempat Ikonik di <span className="fw-medium">{city || 'Kota Kamu'}</span>
+          Daftar Tempat Ikonik di <span className="fw-bold">{city || 'Kota Kamu'}</span>
         </h2>
 
         {placesLoading && (
@@ -23,7 +23,7 @@ const PlacesPage = () => {
         )}
 
         <div 
-          className="border p-4"
+          className="border border-2 border-dark p-4"
           style={{ 
             maxHeight: '80vh', 
             overflowY: 'auto'
@@ -32,8 +32,8 @@ const PlacesPage = () => {
           {places.length > 0 ? (
             <div className="row g-4">
               {places.map((place, index) => (
-                <div key={index} className="col-12">
-                  <div className="card shadow-sm rounded-4 overflow-hidden">
+                <div key={index} className="col-lg-6 col-12">
+                  <div className="card border-2 border-dark shadow-sm rounded-4 overflow-hidden">
                     <div className="card-body py-4">
                       <h5 className="card-title fw-bold fs-4 mb-3 text-dark">
                         {place.name}

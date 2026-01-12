@@ -23,7 +23,7 @@ const PlacesPage = () => {
         )}
 
         <div 
-          className="border border-2 border-dark p-4"
+          className="p-4"
           style={{ 
             maxHeight: '80vh', 
             overflowY: 'auto'

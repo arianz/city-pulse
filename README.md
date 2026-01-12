@@ -45,3 +45,8 @@ A modern, responsive web application that automatically detects your location an
    ```bash
    npm run dev
    ```
+
+## Screenshots
+|          App Interface - Desktop         |          App Interface - Mobile          |
+|------------------------------------------|------------------------------------------|
+| ![Desktop Display](screenshots/app_interface_desktop.png) | ![Mobile Display](screenshots/app_interface_mobile.png) |

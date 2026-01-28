@@ -6,13 +6,13 @@ const Home = () => {
   const getDetailedLocation = () => {
     if (!locationDetails) return null
     const parts = []
-    if (locationDetails.kelurahan !== 'Tidak Diketahui') {
+    if (locationDetails.kelurahan && locationDetails.kelurahan !== 'Tidak Diketahui') {
       parts.push(locationDetails.kelurahan)
     }
-    if (locationDetails.kecamatan !== 'Tidak Diketahui') {
+    if (locationDetails.kecamatan && locationDetails.kecamatan !== 'Tidak Diketahui') {
       parts.push(locationDetails.kecamatan)
     }
-    if (locationDetails.kotaKab !== 'Tidak Diketahui') {
+    if (locationDetails.kotaKab && locationDetails.kotaKab !== 'Tidak Diketahui') {
       parts.push(locationDetails.kotaKab)
     }
     return parts.length > 0 ? parts.join(', ') : city || 'Lokasi Tidak Diketahui'

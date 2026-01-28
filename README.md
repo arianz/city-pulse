@@ -19,7 +19,7 @@ A modern, responsive web application that automatically detects your location an
   - OpenWeatherMap (weather & forecast)
   - NewsData.io (local news)
   - Geoapify Places (landmarks & points of interest)
-  - BigDataCloud (reverse geocoding)
+  - OpenCage (reverse geocoding)
 
 ## Installation
 
@@ -37,6 +37,7 @@ A modern, responsive web application that automatically detects your location an
    ```
 4. **Create .env file in root directory and fill in your API keys:**:
    ```bash
+   VITE_OPENCAGE_API_KEY=yout_opencage_key_here
    VITE_OPENWEATHER_API_KEY=your_openweather_key_here
    VITE_NEWSDATA_API_KEY=your_newsdata_key_here
    VITE_GEOAPIFY_API_KEY=your_geoapify_key_here

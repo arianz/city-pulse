@@ -105,8 +105,8 @@ const WeatherDetail = () => {
                     <img
                       src={`https://openweathermap.org/img/wn/${weather.icon}@4x.png`}
                       alt={weather.description}
-                      className="mb-4"
-                      style={{ width: '180px' }}
+                      className="mb-4 img-fluid"
+                      style={{ maxWidth: '180px', width: '100%', height: 'auto' }}
                     />
 
                     <div className="d-flex align-items-center justify-content-center gap-3 mb-4">
@@ -125,7 +125,7 @@ const WeatherDetail = () => {
                       {weather.description}
                     </p>
 
-                    <div className="row g-5">
+                    <div className="row g-4 g-lg-5 align-items-start">
                       <div className="col-6">
                         <div className="d-flex flex-column align-items-center">
                           <i className="bi bi-droplet-half fs-1 text-primary mb-3"></i>
